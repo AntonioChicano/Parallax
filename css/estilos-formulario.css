@@ -1,0 +1,78 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+form{
+    width: 1200px;
+    padding: 32px;
+    border-radius: 0px;
+    margin: 32px auto;
+    text-align: left;
+}
+
+input[type="text"], select, textarea{
+    display: block;
+    padding: 4px 8px;
+    width: 100%;
+    margin: 8px 0;
+}
+
+input[type="submit"]{
+    padding: 12px;
+    background-color: #eec86a;
+    border: none;
+}
+
+textarea{
+    height: 96px;
+    resize: none;
+}
+
+label{
+    font-weight: bold;
+    display: block;
+    margin: 8px 0;
+    color: #0066ff;
+}
+
+.marketing label, .rgpd{
+    display: inline-block;
+    font-weight: normal;
+}
+
+.rgpd{
+    width: 90%;
+}
+
+mark{
+    float: right;
+}
+
+/*responsive a 600px de ancho, haga 2 columnas se apilen una encima de la otra en lugar de una al lado de la otra*/
+
+@media (max-width: 1200px) {
+    form{
+        width: 800px;
+    }
+}
+
+@media (max-width: 1025px) {
+    form{
+        width: 750px;
+    }
+}
+
+@media (max-width: 768px) {
+    form{
+    width: 550px;
+   }
+}
+
+@media (max-width: 600px) {
+    form{
+        width: 350px;
+    }
+}

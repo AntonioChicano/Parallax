@@ -1,0 +1,167 @@
+*{
+    box-sizing: border-box;
+}
+/*estilos cuerpo*/
+body, html{
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: #111111;
+}
+
+/** Navegación Responsive **/
+.barra {
+    overflow: hidden;
+}
+.mobile-menu {
+    color: #ffffff;
+    font-size: 2rem;
+    text-align: center;
+    display: block;
+    padding: 5px 0;
+}
+#nav:target {
+    max-height: 800px;
+}
+.navegacion-principal {
+    max-height: 0;
+    transition: .5s;
+}
+@media (min-width:768px){
+    .navegacion-principal{
+        max-height: unset;
+    }
+    .mobile-menu, 
+    .cerrar {
+        display: none!important;
+		color: #ffffff;
+    }
+}
+
+
+/** Navegacion **/
+.barra {
+    background-color: #000000;
+}
+.navegacion-principal a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 22px;
+    display: block;
+    text-align: center;
+    padding: 20px;
+}
+@media (min-width:768px){
+    .navegacion-principal a{
+        display: inline-block;
+    }
+}
+.navegacion-principal a:hover {
+    background-color: #00B8E4;
+}
+
+#mivideo{
+    width: 100%;
+    height: 100%;
+}
+
+.contenedor{
+    max-width: 1600px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;   
+    color: #0c766c;                     /*background-color: #111111;*/
+    background-color: #111111;    /*background-image: url(../img/grande-fondo-puerta-metalica-garaje_.jpg);  en lugar del color*/
+    padding: 5px;
+    text-align: justify;
+}
+
+.contenfooter{
+    max-width: 1600px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    color: #0c766c;
+    background-color: #111111;
+    padding: 50px 80px;
+    opacity: 0.60;
+}
+
+/*columnas*/
+
+.columna{                   /*para 3 columnas*/
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+.columna2{                 /*para 2 columnas*/
+    float: left;
+    width: 50%;
+    padding: 5px;
+}
+
+.columna3{                   /*para 2 columnas desigual*/
+    float: left;
+    width: 35%;
+    padding: 5px;
+}
+
+.columna4{                      /*para 2 columnas desigual*/
+    float: left;
+    width: 65%;
+    padding: 145px;
+}
+
+/*imagenes*/
+
+.parallax2, .parallax3, .parallax4{
+    position: relative;
+    /*opacity: ;*/
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax2{
+    background-image: url(../css/mustang.jpg);
+    min-height: 400px;
+	width: 100%;
+}
+
+.parallax3{
+    background-image:url(../img/viper.jpg) ;
+    min-height: 400px;
+}
+
+.parallax4{
+    background-image:url(../img/belair.jpg) ;
+    min-height: 50%;
+}
+
+.caption{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+}
+
+.caption span.border{
+    color: #fff;
+    padding: 18px;
+    font-size: 35px;
+    letter-spacing: 10px;
+}
+
+@media (max-width: 768px) {
+   .columna, .columna2, .columna3, .columna4 {
+        width: 100%;
+		padding:5px;
+    }
+}
+
